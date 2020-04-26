@@ -31,6 +31,12 @@
         </p>
       </div>
     </div>
+
+    <img
+      class="profile__cloud"
+      src="/img/profile/cloud.png"
+      alt=""
+    >
   </div>
 </template>
 
@@ -44,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 90vh;
 
   &__contents {
@@ -97,6 +104,13 @@
       height: 18rem;
       margin: 0 2.25rem;
     }
+  }
+
+  &__cloud {
+    position: absolute;
+    right: -6rem;
+    bottom: -10rem;
+    height: 16rem;
   }
 }
 </style>
