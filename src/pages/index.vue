@@ -1,6 +1,5 @@
 <template>
   <div class="page page-index">
-    index
     <v-logo />
   </div>
 </template>
