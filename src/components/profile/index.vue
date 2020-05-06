@@ -47,12 +47,14 @@
     display: flex;
     flex-direction: row;
     writing-mode: vertical-rl;
+    height: 18rem;
     margin-left: 1.5rem;
   }
 
   &__avatar {
+    display: block;
     border-radius: 1.25rem;
-    width: 4.5rem;
+    width: 72px;
     margin-bottom: 1.5rem;
   }
 

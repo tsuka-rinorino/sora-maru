@@ -25,11 +25,9 @@
 
 
 <script>
-import RadarChart from '../radar-chart/index.vue';
-
 export default {
   components: {
-    'v-radar-chart': RadarChart,
+    'v-radar-chart': () => import('../radar-chart/index.vue'),
   },
   data() {
     return {
@@ -40,8 +38,8 @@ export default {
           backgroundColor: 'rgba(247, 131, 172, 0.2)',
           borderColor: 'rgba(247, 131, 172, 1)',
           pointBackgroundColor: 'rgba(247, 131, 172, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
+          pointBorderColor: '#fafafa',
+          pointHoverBackgroundColor: '#fafafa',
           pointHoverBorderColor: 'rgba(247, 131, 172, 1)',
           data: [5, 5, 5, 5, 5, 2],
           pointRadius: 3.5,
@@ -55,8 +53,8 @@ export default {
           backgroundColor: 'rgba(77, 170, 247, 0.2)',
           borderColor: 'rgba(77, 170, 247, 1)',
           pointBackgroundColor: 'rgba(77, 170, 247, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
+          pointBorderColor: '#fafafa',
+          pointHoverBackgroundColor: '#fafafa',
           pointHoverBorderColor: 'rgba(77, 170, 247, 1)',
           data: [2, 1, 3, 4, 2, 2],
           pointRadius: 3.5,
@@ -70,8 +68,8 @@ export default {
           backgroundColor: 'rgba(255, 169, 77,0.2)',
           borderColor: 'rgba(255, 169, 77,1)',
           pointBackgroundColor: 'rgba(255, 169, 77,1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
+          pointBorderColor: '#fafafa',
+          pointHoverBackgroundColor: '#fafafa',
           pointHoverBorderColor: 'rgba(255, 169, 77,1)',
           data: [5, 5, 4, 3, 1, 2],
           pointRadius: 3.5,
@@ -86,20 +84,14 @@ export default {
 
 <style lang="scss">
 .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
 
   &__list {
     pointer-events: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__item {
-    margin-left: 32px;
-    margin-right: 32px;
   }
 }
 </style>

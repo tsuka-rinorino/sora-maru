@@ -13,11 +13,11 @@ export default {
       required: true,
     },
     width: {
-      default: 256,
+      default: 216,
       type: Number,
     },
     height: {
-      default: 256,
+      default: 216,
       type: Number,
     },
   },

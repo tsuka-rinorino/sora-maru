@@ -48,7 +48,7 @@ export default {
   &--loaded {
     transition: left 1.75s 4.75s, transform 1.75s 4.75s;
     transform: translateX(0);
-    left: 128px;
+    left: 80px;
   }
 
   &__bg {

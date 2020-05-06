@@ -11,8 +11,11 @@
 
 <style lang="scss">
 .wrap {
-  max-width: 1200px;
-  padding-left: 360px;
+  max-width: 1152px;
+  padding-left: 312px;
   padding-right: 32px;
+  @media (min-width: 1056px) {
+    padding-left: 344px;
+  }
 }
 </style>
