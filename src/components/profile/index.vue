@@ -23,10 +23,10 @@
         １９８９年１２月２６日生まれ。『そらまる』が愛称の声優さんと同じ生年月日なのでサイト名をそらまるにしました。ただのアニメオタクです。
       </p>
       <p>
-        中学の入学祝いで買ってもらったPCが楽しく、その頃からWeb制作をはじめてはや18年。メインはCSS、Vue.jsやデザインをやっています。
+        中学の入学祝いで買ってもらったＰＣが楽しく、その頃からＷｅｂ制作をはじめてはや１８年。メインはＣＳＳ、Ｖｕｅ．ｊｓやデザインをやっています。
       </p>
       <p>
-        現在はフリーのWebデザイナーです。お仕事のご依頼はメールフォームよりご連絡ください。
+        現在はフリーのＷｅｂデザイナーです。お仕事のご依頼は現在受け付けてません。
       </p>
     </div>
   </div>
@@ -47,6 +47,7 @@
     display: flex;
     flex-direction: row;
     writing-mode: vertical-rl;
+    margin-left: 1.5rem;
   }
 
   &__avatar {
@@ -69,6 +70,7 @@
   }
 
   &__full-name {
+    font-family: $font-family-serif;
     font-size: 20px;
     letter-spacing: 0.4em;
     height: 100%;
@@ -76,16 +78,19 @@
 
   &__kana {
     font-size: 10px;
+    font-weight: 500;
+    color: #979ca1;
     height: 100%;
   }
 
   &__body {
     writing-mode: vertical-rl;
-    line-height: 2.125;
-    letter-spacing: 0.2em;
     p {
+      font-size: 0.8125rem;
       text-align: justify;
       text-justify: inter-ideograph;
+      line-height: 2.425;
+      letter-spacing: 0.125em;
       height: 18rem;
       margin: 0 2.25rem;
     }

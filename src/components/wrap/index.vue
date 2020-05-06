@@ -13,5 +13,6 @@
 .wrap {
   max-width: 1200px;
   padding-left: 360px;
+  padding-right: 32px;
 }
 </style>
