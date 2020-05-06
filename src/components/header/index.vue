@@ -24,7 +24,10 @@ export default {
   mounted() {
     setTimeout(() => {
       this.mount = true;
+      this.$emit('loaded');
     }, 5);
+  },
+  methods: {
   },
 };
 </script>
@@ -39,11 +42,11 @@ export default {
   left: 50%;
   z-index: 10000;
   background-color: #2c4053;
-  width: 200px;
+  width: 172px;
   height: 100vh;
 
   &--loaded {
-    transition: left 1.75s 4.25s, transform 1.75s 4.25s;
+    transition: left 1.75s 4.75s, transform 1.75s 4.75s;
     transform: translateX(0);
     left: 128px;
   }
@@ -54,16 +57,16 @@ export default {
     top: 0;
     left: 0;
     z-index: 0;
-    background: url('/img/header/bg.jpg') top left / 200px auto;
-    width: 200px;
+    background: url('/img/header/bg.jpg') top left / 172px auto;
+    width: 172px;
     height: 100vh;
   }
 
   .logo {
-    transform: scale(0.8);
+    transform: scale(0.7);
     position: absolute;
     top: 0px;
-    left: -88px;
+    left: -100px;
     z-index: 1;
   }
 }

@@ -109,7 +109,7 @@ $delay: 0.5;
       height: 260px;
       &.v-enter-active,
       &.v-leave-active {
-        transition: opacity 1.25s #{$delay * 1 + 's'}, transform 1.75s #{$delay * 5 + 's'};
+        transition: opacity 1.25s #{$delay * 1 + 's'}, transform 1.25s #{$delay * 7 + 's'};
       }
       &.v-enter,
       &.v-leave-to {
@@ -177,7 +177,7 @@ $delay: 0.5;
       height: 17px;
       &.v-enter-active,
       &.v-leave-active {
-        transition-delay: #{$delay * 7 + 's'};
+        transition-delay: #{$delay * 6 + 's'};
       }
     }
   }
