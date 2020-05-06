@@ -1,3 +1,5 @@
+@import "../../../../node_modules/open-color/open-color.scss";
+
 // color
 $main-color: #2d4159;
 
@@ -7,13 +9,13 @@ $font-family-serif:      "Noto Serif JP", serif;
 $font-family-base:       $font-family-sans-serif;
 
 // base
-$body-bg:    #fafafa;
+$body-bg: #fafafa;
 $body-color: #2f4459;
 $font-size-base: 0.875rem;
 $line-height-base: 1.8;
 $letter-spacing-base: 0.05em;
 
-$link-color:            #fff !default;
+$link-color:            $oc-blue-6 !default;
 $link-decoration:       none !default;
 $link-hover-color:      $link-color !default;
 $link-hover-decoration: underline !default;
