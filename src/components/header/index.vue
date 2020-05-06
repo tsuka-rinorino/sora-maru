@@ -35,7 +35,6 @@ export default {
 
 <style lang="scss">
 .header {
-  transition: 2s;
   transform: translateX(-50%);
   position: fixed;
   top: 0;
@@ -49,6 +48,9 @@ export default {
     transition: left 1.75s 4.75s, transform 1.75s 4.75s;
     transform: translateX(0);
     left: 80px;
+    @media (min-width: 1280px) {
+      left: 128px;
+    }
   }
 
   &__bg {
