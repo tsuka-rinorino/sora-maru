@@ -1,19 +1,19 @@
 <template>
-  <div class="skills">
-    <div class="skills__list">
-      <div class="skills__item">
+  <div class="skill">
+    <div class="skill__list">
+      <div class="skill__item">
         <v-radar-chart
           :data="front.data"
           :label="front.label"
         />
       </div>
-      <div class="skills__item">
+      <div class="skill__item">
         <v-radar-chart
           :data="back.data"
           :label="back.label"
         />
       </div>
-      <div class="skills__item">
+      <div class="skill__item">
         <v-radar-chart
           :data="other.data"
           :label="other.label"
@@ -83,7 +83,7 @@ export default {
 
 
 <style lang="scss">
-.skills {
+.skill {
 
   &__list {
     pointer-events: none;

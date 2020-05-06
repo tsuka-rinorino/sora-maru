@@ -7,7 +7,7 @@
         class="page__body"
       >
         <v-profile />
-        <v-skills />
+        <v-skill />
         <v-product />
       </v-wrap>
     </transition>
@@ -23,7 +23,7 @@ export default {
     'v-header': Header,
     'v-wrap': () => import('../components/wrap/index.vue'),
     'v-profile': () => import('../components/profile/index.vue'),
-    'v-skills': () => import('../components/skills/index.vue'),
+    'v-skill': () => import('../components/skill/index.vue'),
     'v-product': () => import('../components/product/index.vue'),
   },
   data() {
