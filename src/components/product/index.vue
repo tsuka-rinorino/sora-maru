@@ -2,13 +2,13 @@
   <div class="product">
     <div class="product__list">
       <div
-        v-for="item in items"
+        v-for="item in itemsSort"
         :key="item.id"
         class="product__item"
       >
         <a
           class="product__link"
-          :href="item.url"
+          :href="item.url ? item.url : null"
         >
           <div class="product__img-outer">
             <img
@@ -28,7 +28,7 @@
                   :key="tag"
                   class="product__tag"
                 >
-                  {{ tag }}80
+                  {{ tag }}
                 </div>
               </div>
               <div class="product__date">
@@ -59,7 +59,7 @@ export default {
           id: 1,
           title: 'Illustheme',
           img: '/img/product/illustheme.jpg',
-          url: '/illustheme',
+          url: '',
           tags: [
             'デザイン',
             'コーディング',
@@ -69,7 +69,7 @@ export default {
           id: 2,
           title: 'CDLPT',
           img: '/img/product/cdlpt.jpg',
-          url: '/cdlpt',
+          url: '',
           tags: [
             'デザイン',
             'コーディング',
@@ -81,6 +81,7 @@ export default {
           img: '/img/product/shirayurinohanataba.jpg',
           url: 'https://www.amazon.co.jp/%E9%9D%92%E6%98%A5%E3%81%AF%E7%99%BD%E7%99%BE%E5%90%88%E3%81%AE%E8%8A%B1%E6%9D%9F-%E7%99%BE%E5%90%88%E5%B0%8F%E8%AA%AC-%E7%B6%BE%E5%8A%A0%E5%A5%88-ebook/dp/B07GR7M6MQ/ref=sr_1_2?qid=1582541653&s=digital-text&sr=1-2',
           tags: [
+            'ロゴ',
             'デザイン',
           ],
           date: '201808',
@@ -90,6 +91,7 @@ export default {
           img: '/img/product/bokurahahoeru.jpg',
           url: 'https://www.amazon.co.jp/%E3%81%BC%E3%81%8F%E3%82%89%E3%81%AF%E5%90%A0%E3%81%88%E3%82%8B%E5%BC%B1%E3%81%84%E7%8A%AC%E3%81%A0%E3%81%8B%E3%82%89-%E7%99%BE%E5%90%88%E5%B0%8F%E8%AA%AC-%E7%B6%BE%E5%8A%A0%E5%A5%88-ebook/dp/B07JNS8KCH/ref=sr_1_6?qid=1582541653&s=digital-text&sr=1-6',
           tags: [
+            'ロゴ',
             'デザイン',
           ],
           date: '201810',
@@ -99,6 +101,7 @@ export default {
           img: '/img/product/anatacomplex.jpg',
           url: 'https://www.amazon.co.jp/%E3%82%A2%E3%83%8A%E3%82%BF%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-%E7%99%BE%E5%90%88%E5%B0%8F%E8%AA%AC-%E7%B6%BE%E5%8A%A0%E5%A5%88-ebook/dp/B07LGV8N4T/ref=sr_1_7?qid=1582541653&s=digital-text&sr=1-7',
           tags: [
+            'ロゴ',
             'デザイン',
           ],
           date: '201812',
@@ -108,12 +111,24 @@ export default {
           img: '/img/product/karanoutuwaninanisosogu.jpg',
           url: 'https://www.amazon.co.jp/%E7%A9%BA%E3%81%AE%E5%99%A8%E3%81%AB%E3%81%AA%E3%81%AB%E6%B3%A8%E3%81%90%EF%BC%9F-%E7%99%BE%E5%90%88%E5%B0%8F%E8%AA%AC-%E7%B6%BE%E5%8A%A0%E5%A5%88-ebook/dp/B07R8LJKTJ/ref=sr_1_9?qid=1582541653&s=digital-text&sr=1-9',
           tags: [
+            'ロゴ',
             'デザイン',
           ],
           date: '201904',
         },
       ],
     };
+  },
+  computed: {
+    itemsSort() {
+      const { items } = this;
+
+      return items.sort((a, b) => {
+        if (a.id < b.id) return 1;
+        if (a.id > b.id) return -1;
+        return 0;
+      });
+    },
   },
 };
 </script>
@@ -146,10 +161,15 @@ export default {
                 0px 2px 2px 0px rgba(0, 0, 0, 0.07),
                 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
     &:hover {
-      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
-                  0px 5px 8px 0px rgba(0, 0, 0, 0.07),
-                  0px 1px 14px 0px rgba(0, 0, 0, 0.06);
+      cursor: default;
       text-decoration: none;
+    }
+    &[href] {
+      &:hover {
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
+                    0px 5px 8px 0px rgba(0, 0, 0, 0.07),
+                    0px 1px 14px 0px rgba(0, 0, 0, 0.06);
+      }
     }
   }
 
