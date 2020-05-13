@@ -67,7 +67,7 @@ export default {
   .profile,
   .skill,
   .product {
-    margin-bottom: 80px;
+    margin-bottom: 128px;
   }
 }
 </style>
