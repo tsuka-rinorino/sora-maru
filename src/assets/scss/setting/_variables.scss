@@ -1,0 +1,23 @@
+@import "../../../../node_modules/open-color/open-color.scss";
+
+// color
+$main-color: #2d4159;
+
+// fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
+$font-family-serif:      "Noto Serif JP", serif;
+$font-family-base:       $font-family-sans-serif;
+
+// base
+$body-bg: #fafafa;
+$body-color: $oc-gray-9;
+$font-size-base: 0.875rem;
+$line-height-base: 1.8;
+$letter-spacing-base: 0.05em;
+
+$link-color:            $oc-blue-6 !default;
+$link-decoration:       none !default;
+$link-hover-color:      $link-color !default;
+$link-hover-decoration: underline !default;
+
+$transition-base: 0.25s ease-in-out;
