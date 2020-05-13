@@ -8,6 +8,7 @@ module.exports = {
       },
     },
   },
+  outputDir: 'public_html',
   css: {
     loaderOptions: {
       sass: {
