@@ -45,7 +45,7 @@ export default {
   height: 100vh;
 
   &--loaded {
-    transition: left 1.75s 4.75s, transform 1.75s 4.75s;
+    transition: left 0.75s 4.5s, transform 0.75s 4.5s;
     transform: translateX(0);
     left: 80px;
     @media (min-width: 1280px) {

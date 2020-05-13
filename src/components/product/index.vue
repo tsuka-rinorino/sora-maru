@@ -28,7 +28,7 @@
                   :key="tag"
                   class="product__tag"
                 >
-                  {{ tag }}
+                  {{ tag }}80
                 </div>
               </div>
               <div class="product__date">
@@ -128,16 +128,13 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 54rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__item {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 32px;
-    width: 256px;
+    width: 272px;
   }
 
   &__link {

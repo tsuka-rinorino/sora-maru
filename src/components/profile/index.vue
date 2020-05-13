@@ -87,6 +87,9 @@
 
   &__body {
     writing-mode: vertical-rl;
+    *:last-of-type {
+      margin-left: 0;
+    }
     p {
       font-size: 0.8125rem;
       text-align: justify;

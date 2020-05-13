@@ -18,13 +18,18 @@
 <script>
 import Header from '../components/header/index.vue';
 
+import Wrap from '../components/wrap/index.vue';
+import Profile from '../components/profile/index.vue';
+import Skill from '../components/skill/index.vue';
+import Product from '../components/product/index.vue';
+
 export default {
   components: {
     'v-header': Header,
-    'v-wrap': () => import('../components/wrap/index.vue'),
-    'v-profile': () => import('../components/profile/index.vue'),
-    'v-skill': () => import('../components/skill/index.vue'),
-    'v-product': () => import('../components/product/index.vue'),
+    'v-wrap': Wrap,
+    'v-profile': Profile,
+    'v-skill': Skill,
+    'v-product': Product,
   },
   data() {
     return {
@@ -44,9 +49,10 @@ export default {
 .page {
 
   &__body {
+    padding-top: 128px;
     &.v-enter-active,
     &.v-leave-active {
-      transition: 1.25s 6.25s;
+      transition: 1.25s 5.3s;
     }
     &.v-enter,
     &.v-leave-to {
@@ -56,6 +62,12 @@ export default {
     &.v-leave {
       opacity: 1;
     }
+  }
+
+  .profile,
+  .skill,
+  .product {
+    margin-bottom: 80px;
   }
 }
 </style>
