@@ -49,7 +49,7 @@ export default {
         },
       },
       back: {
-        label: ['PHP', 'MySQL', 'Word Press', 'EC-CUBE', 'Laravel', 'Contentful'],
+        label: ['PHP', 'MySQL', 'PostgreSQL', 'Word Press', 'EC-CUBE', 'Laravel'],
         data: {
           label: 'バックエンド',
           backgroundColor: 'rgba(77, 170, 247, 0.2)',
@@ -58,7 +58,7 @@ export default {
           pointBorderColor: '#fafafa',
           pointHoverBackgroundColor: '#fafafa',
           pointHoverBorderColor: 'rgba(77, 170, 247, 1)',
-          data: [2, 1, 3, 4, 2, 2],
+          data: [2, 1, 1, 3, 1, 2],
           pointRadius: 3.5,
           borderWidth: 1,
         },
