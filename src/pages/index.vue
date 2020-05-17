@@ -6,9 +6,9 @@
         v-show="loaded"
         class="page__body"
       >
-        <v-profile />
-        <v-skill />
-        <v-product />
+        <v-profile v-if="componentsShow" />
+        <v-skill v-if="componentsShow" />
+        <v-product v-if="componentsShow" />
       </v-wrap>
     </transition>
   </div>
@@ -17,7 +17,6 @@
 
 <script>
 import Header from '../components/header/index.vue';
-
 import Wrap from '../components/wrap/index.vue';
 import Profile from '../components/profile/index.vue';
 import Skill from '../components/skill/index.vue';
@@ -34,11 +33,15 @@ export default {
   data() {
     return {
       loaded: false,
+      componentsShow: false,
     };
   },
   methods: {
     headerLoaded() {
       this.loaded = true;
+      setTimeout(() => {
+        this.componentsShow = true;
+      }, 126);
     },
   },
 };
@@ -67,7 +70,7 @@ export default {
   .profile,
   .skill,
   .product {
-    margin-bottom: 80px;
+    margin-bottom: 128px;
   }
 }
 </style>
