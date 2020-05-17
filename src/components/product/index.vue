@@ -122,6 +122,17 @@ export default {
           url: 'https://tsuka-rinorino.github.io/contentful/docs/',
           tags: [
             'コーディング',
+            'サンプル',
+          ],
+          date: '202005',
+        }, {
+          id: 8,
+          title: 'Vue.js TypeScript サンプル',
+          img: '/img/product/vue.png',
+          url: 'https://github.com/tsuka-rinorino/vue-typescript',
+          tags: [
+            'コーディング',
+            'サンプル',
           ],
           date: '202005',
         },
@@ -146,6 +157,9 @@ export default {
 <style lang="scss">
 .product {
   $e: &;
+  width: 608px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 
   &__list {
