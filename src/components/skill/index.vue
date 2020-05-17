@@ -25,9 +25,11 @@
 
 
 <script>
+import RadarChart from '../radar-chart/index.vue';
+
 export default {
   components: {
-    'v-radar-chart': () => import('../radar-chart/index.vue'),
+    'v-radar-chart': RadarChart,
   },
   data() {
     return {

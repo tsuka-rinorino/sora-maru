@@ -17,7 +17,6 @@
 
 <script>
 import Header from '../components/header/index.vue';
-
 import Wrap from '../components/wrap/index.vue';
 import Profile from '../components/profile/index.vue';
 import Skill from '../components/skill/index.vue';
