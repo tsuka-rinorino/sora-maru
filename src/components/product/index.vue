@@ -115,6 +115,15 @@ export default {
             'デザイン',
           ],
           date: '201904',
+        }, {
+          id: 7,
+          title: 'Contentful',
+          img: '/img/product/contentful.png',
+          url: 'https://tsuka-rinorino.github.io/contentful/docs/',
+          tags: [
+            'コーディング',
+          ],
+          date: '202005',
         },
       ],
     };
@@ -142,7 +151,6 @@ export default {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   &__item {
