@@ -59,7 +59,7 @@ export default {
           id: 1,
           title: 'Illustheme',
           img: '/img/product/illustheme.jpg',
-          url: '',
+          url: 'https://tsuka-rinorino.github.io/illustheme/',
           tags: [
             'デザイン',
             'コーディング',
@@ -69,7 +69,7 @@ export default {
           id: 2,
           title: 'CDLPT',
           img: '/img/product/cdlpt.jpg',
-          url: '',
+          url: 'https://tsuka-rinorino.github.io/cdlpt/',
           tags: [
             'デザイン',
             'コーディング',
@@ -130,6 +130,16 @@ export default {
           title: 'Vue.js TypeScript サンプル',
           img: '/img/product/vue.png',
           url: 'https://github.com/tsuka-rinorino/vue-typescript',
+          tags: [
+            'コーディング',
+            'サンプル',
+          ],
+          date: '202005',
+        }, {
+          id: 9,
+          title: 'Vue.js 単体テストサンプル',
+          img: '/img/product/unit-test.png',
+          url: 'https://github.com/tsuka-rinorino/vue-unit-test',
           tags: [
             'コーディング',
             'サンプル',
