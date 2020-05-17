@@ -59,7 +59,7 @@ export default {
           id: 1,
           title: 'Illustheme',
           img: '/img/product/illustheme.jpg',
-          url: '',
+          url: 'https://tsuka-rinorino.github.io/illustheme/',
           tags: [
             'デザイン',
             'コーディング',
@@ -69,7 +69,7 @@ export default {
           id: 2,
           title: 'CDLPT',
           img: '/img/product/cdlpt.jpg',
-          url: '',
+          url: 'https://tsuka-rinorino.github.io/cdlpt/',
           tags: [
             'デザイン',
             'コーディング',
