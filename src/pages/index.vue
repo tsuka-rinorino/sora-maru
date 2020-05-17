@@ -6,9 +6,9 @@
         v-show="loaded"
         class="page__body"
       >
-        <v-profile />
-        <v-skill />
-        <v-product />
+        <v-profile v-if="componentsShow" />
+        <v-skill v-if="componentsShow" />
+        <v-product v-if="componentsShow" />
       </v-wrap>
     </transition>
   </div>
@@ -33,11 +33,15 @@ export default {
   data() {
     return {
       loaded: false,
+      componentsShow: false,
     };
   },
   methods: {
     headerLoaded() {
       this.loaded = true;
+      setTimeout(() => {
+        this.componentsShow = true;
+      }, 126);
     },
   },
 };
