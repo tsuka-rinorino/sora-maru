@@ -135,6 +135,16 @@ export default {
             'サンプル',
           ],
           date: '202005',
+        }, {
+          id: 9,
+          title: 'Vue.js 単体テストサンプル',
+          img: '/img/product/unit-test.png',
+          url: 'https://github.com/tsuka-rinorino/vue-unit-test',
+          tags: [
+            'コーディング',
+            'サンプル',
+          ],
+          date: '202005',
         },
       ],
     };
